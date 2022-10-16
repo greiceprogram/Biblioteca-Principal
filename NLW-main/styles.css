@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+    top: 20px;
+    background-color: #04AA6D;
+  }
+  
+  #blog {
+    top: 80px;
+    background-color: #2196F3; /* Blue */
+  }
+  
+  #projects {
+    top: 140px;
+    background-color: #f44336; /* Red */
+  }
+  
+  #contact {
+    top: 200px;
+    background-color: #555 /* Light Black */
+  }
+
+ul{
+    list-style: none;
+}
+
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+body {
+    background-image: url(assets/aberto.jpg);
+    height: 50px;
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color:whitesmoke;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+header {
+    padding-top: 32px;
+    height: calc(120px + 32px);
+    
+}
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg,#9572fC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+
+    display: flex;
+    padding: 4px;
+}
+
+header div:hover{
+    transform: scale(1.1);
+}
+
+header div img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+
+    display: grid;
+    gap: 24px;
+
+}
+
+section {
+     color: white;
+     background-image: linear-gradient(90deg,#9572fC 0%, #43E7AD 50.52%, #E2D45C 100%); 
+     padding-top: 4px;
+     border-radius: 10px;
+    }
+
+
+section div { /*Fundo do card*/
+    background-image: url(assets/fundo.jpg);
+    background-color: whitesmoke;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+    
+}
+section h6{
+    letter-spacing: -0.18px;
+    color: #121214;
+
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+    color: #121214;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #121214;
+}
+
+section ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    margin-top: 24px;
+}
+
+.Book-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+.Book-list img:hover{
+    transform: scale(1.1);
+}
+
+.Book-list-Bel img {
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443E54;
+
+}
+
+.Book-list-Bel img:hover{
+    transform: scale(1.1);
+}
+
+.social-list img:hover{
+    transform: scale(1.1);
+}
+
+/* animation */
+
+header div {
+    animation: fromTop .7s .2s backwards;
+
+}
+
+main section {
+    animation: fromBottom .7s backwards;
+}       
+
+main section:nth-child(1){
+    animation-delay: 0;
+}
+main section:nth-child(2){
+    animation-delay: .4s;
+
+}
+main section:nth-child(3){
+    animation-delay: .8s;
+
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+
+
+@keyframes fromTop{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
