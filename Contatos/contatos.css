@@ -9,11 +9,11 @@ ul{
 }
 
 body {
-    background-image: url(fundo.jpg);
+    background-image: url(aberto.jpg);
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-color: #121214;
+    background-color:whitesmoke;
 }
 
 body * {
@@ -65,7 +65,8 @@ section {
    }
 
 
-section div {
+section div { /*fundo*/
+   background-image: url(fundo.jpg);
    background-color: #2a2634;
    padding: 32px;
    padding-top: 24px;
@@ -74,20 +75,21 @@ section div {
   
 }
 
-section h2 { /*Autores*/
+section h2 { /*Titulo*/
    letter-spacing: -0.47px;
+   color:#121214;
 
    
 }
 
-section p { /*Nomes dos autores*/
+section p { 
    letter-spacing: -0.18px;
-   color: whitesmoke;
-
+   color: #121214;
    
+
 }
 
-section ul{ /*Fotos dos autores*/
+section ul{ 
    display: flex;
    flex-wrap: wrap;
    gap: 16px;

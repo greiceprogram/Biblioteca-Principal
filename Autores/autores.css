@@ -9,11 +9,11 @@ ul{
 }
 
 body {
-    background-image: url(fundo.jpg);
+    background-image: url(aberto.jpg);
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-color: #121214;
+    background-color:whitesmoke;
 }
 
 body * {
@@ -64,7 +64,8 @@ section {
    }
 
 
-section div {
+section div { /*Fundo dos cards*/
+   background-image: url(fundo.jpg);
    background-color: #2a2634;
    padding: 32px;
    padding-top: 24px;
@@ -75,14 +76,18 @@ section div {
 section h2 { /*Autores*/
    letter-spacing: -0.47px;
    text-align: center;
+  
+   color: #121214;
 
    
 }
 
 section p { /*Nomes dos autores*/
+   
    letter-spacing: -0.18px;
-   color:whitesmoke;
-
+   color:black;
+   
+   
 }
 
 section ul{ /*Fotos dos autores*/

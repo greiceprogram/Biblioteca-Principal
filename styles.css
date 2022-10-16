@@ -45,12 +45,50 @@ ul{
     list-style: none;
 }
 
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
 body {
-    background-image: url(./assets/bg.jpg);
+    background-image: url(assets/aberto.jpg);
+    height: 50px;
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-color: #121214;
+    background-color:whitesmoke;
 }
 
 body * {
@@ -100,20 +138,28 @@ section {
     }
 
 
-section div {
-    background-color: #2a2634;
+section div { /*Fundo do card*/
+    background-image: url(assets/fundo.jpg);
+    background-color: whitesmoke;
     padding: 32px;
     padding-top: 24px;
     border-radius: 8px;
+    
+}
+section h6{
+    letter-spacing: -0.18px;
+    color: #121214;
+
 }
 
 section h2 {
     letter-spacing: -0.47px;
+    color: #121214;
 }
 
 section p {
     letter-spacing: -0.18px;
-    color: whitesmoke;
+    color: #121214;
 }
 
 section ul{
@@ -170,6 +216,18 @@ main section:nth-child(3){
     animation-delay: .8s;
 
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+
 
 @keyframes fromTop{
     from{
