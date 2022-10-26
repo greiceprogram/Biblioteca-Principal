@@ -40,58 +40,18 @@
     top: 200px;
     background-color: #555 /* Light Black */
   }
- 
+  
 
 ul{
     list-style: none;
 }
 
-* {box-sizing: border-box}
-
-/* Container needed to position the overlay. Adjust the width as needed */
-.container {
-  position: relative;
-  width: 50%;
-  max-width: 300px;
-}
-
-/* Make the image to responsive */
-.image {
-  display: block;
-  max-width: 100%;
-  width: 500px;
-  
-}
-
-/* The overlay effect - lays on top of the container and over the image */
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-/* When you mouse over the container, fade in the overlay title */
-.container:hover .overlay {
-  opacity: 1;
-}
-
-body {
+body { 
     background-image: url(assets/aberto.jpg);
-    height: 50px;
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-color:whitesmoke;
-    
+    background-color: whitesmoke;
 }
 
 body * {
@@ -133,23 +93,22 @@ main {
 
 }
 
-section {
+section { 
      color: white;
      background-image: linear-gradient(90deg,#9572fC 0%, #43E7AD 50.52%, #E2D45C 100%); 
      padding-top: 4px;
      border-radius: 10px;
-    
     }
 
 
-section div { /*Fundo do card*/
+section div { /*fundo dos cards*/
     background-image: url(assets/fundo.jpg);
-    background-color: whitesmoke;
+    background-color: #2a2634;
     padding: 32px;
-    padding-top: 24px;
+    padding-top: 14px;
     border-radius: 8px;
-    
 }
+
 section h6{
     letter-spacing: -0.18px;
     color: #121214;
@@ -165,13 +124,12 @@ section p {
     letter-spacing: -0.18px;
     color: #121214;
 }
-
 section ul{
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+
     margin-top: 24px;
-    
 }
 
 .Book-list img {
@@ -186,7 +144,7 @@ section ul{
 .Book-list-Bel img {
     border-radius: 50%;
     width: 70px;
-    border: 1px solid #443E54;
+    
 
 }
 
@@ -221,18 +179,15 @@ main section:nth-child(3){
 
 }
 
-
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
-}
-
-
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
 
 @keyframes fromTop{
     from{
