@@ -4,7 +4,7 @@
 
 Projeto construido do evento Next Level Week da Rocketseat.
 
-[Clique aqui para acessar](https://greiceprogram.github.io/NLW/)
+[Clique aqui para acessar](https://grcbiblioteca.000webhostapp.com/)
 
 ## Tecnologias
 

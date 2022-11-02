@@ -109,10 +109,7 @@ section h3 {
 }
 
 
-
-
 section div { /*fundo sobre*/
-   background-image: url(fundo.jpg);
    background-color: #2a2634;
    padding: 32px;
    padding-top: 24px;

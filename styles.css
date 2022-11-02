@@ -102,27 +102,30 @@ section {
 
 
 section div { /*fundo dos cards*/
-    background-image: url(assets/fundo.jpg);
+    background-image: url(assets/aberto.jpg);
     background-color: #2a2634;
     padding: 32px;
     padding-top: 14px;
     border-radius: 8px;
-}
-
-section h6{
-    letter-spacing: -0.18px;
-    color: #121214;
-
+    
 }
 
 section h2 {
     letter-spacing: -0.47px;
-    color: #121214;
+    color:#9572fC;
 }
 
 section p {
     letter-spacing: -0.18px;
-    color: #121214;
+    color: whitesmoke;
+}
+
+section h6 {
+    color:#555;
+
+}
+section iframe{
+    border-radius: 10%;
 }
 section ul{
     display: flex;
@@ -178,16 +181,6 @@ main section:nth-child(3){
     animation-delay: .8s;
 
 }
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
-  }
 
 @keyframes fromTop{
     from{
