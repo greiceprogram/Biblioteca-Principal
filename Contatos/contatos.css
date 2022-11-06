@@ -21,7 +21,21 @@
   }
   
   /* The about link: 20px from the top with a green background */
-
+  #about {
+    top: 20px;
+    background-color: #04AA6D;
+  }
+  
+  #blog {
+    top: 80px;
+    background-color: #2196F3; /* Blue */
+  }
+  
+  #projects {
+    top: 140px;
+    background-color: #f44336; /* Red */
+  }
+  
   #contact {
     top: 200px;
     background-color: #555 /* Light Black */

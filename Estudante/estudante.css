@@ -40,13 +40,14 @@
     top: 200px;
     background-color: #555 /* Light Black */
   }
+  
 
 ul{
     list-style: none;
 }
 
 body { 
-    background-image: url(fundolivro.jpg);
+    background-image: url(aberto.jpg);
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
