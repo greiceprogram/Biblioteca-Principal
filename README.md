@@ -1,4 +1,4 @@
-# NLW Books- Trilha Explorer 
+# Biblioteca
 
 ![preview](./.github/Paginainicial.jpg)
 
