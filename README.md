@@ -1,6 +1,6 @@
 # Biblioteca
 
-![preview](./.github/Paginainicial.jpg)
+![preview](./.github/Paginainicial.JPG)
 
 Projeto construido do evento Next Level Week da Rocketseat.
 
