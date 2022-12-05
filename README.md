@@ -1,6 +1,7 @@
 # Biblioteca
 
-![preview](./..github/.Paginainicial.JPG)
+![preview](./Paginainicial.JPG/)
+
 
 
 
