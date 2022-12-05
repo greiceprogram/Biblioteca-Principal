@@ -4,45 +4,37 @@
     box-sizing: border-box;
 }
 
-#mySidenav a {
-    position: absolute; /* Position them relative to the browser window */
-    left: -80px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 100px; /* Set a specific width */
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Increase font size */
-    color: white; /* White text color */
-    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+/* Menu */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Defina a barra de navegação para a posição fixa*/
+    top: 0; /* Posicione a barra de navegação no topo da página */
+    width: 100%; /* Largura completa */
   }
   
-  #mySidenav a:hover {
-    left: 0; /* On mouse-over, make the elements appear as they should */
+  /* Links dentro da barra de navegação */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
   }
   
-  /* The about link: 20px from the top with a green background */
-  #about {
-    top: 20px;
-    background-color: #04AA6D;
+  /* Muda o plano do fundo ao passar o mouse*/
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
   }
   
-  #blog {
-    top: 80px;
-    background-color: #2196F3; /* Blue */
+  /* Main content */
+  .main {
+    margin-top: 50px; /* Margem superior */
   }
-  
-  #projects {
-    top: 140px;
-    background-color: #f44336; /* Red */
-  }
-  
-  #contact {
-    top: 200px;
-    background-color: #555 /* Light Black */
-  }
-  
 
-ul{
+  ul{
     list-style: none;
 }
 
@@ -52,11 +44,14 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: whitesmoke;
+    margin: 0;
+    
 }
 
 body * {
     font-family: 'Inter', sans-serif;
     line-height: 160%;
+    
 }
 
 header {
@@ -78,10 +73,6 @@ header div:hover{
     transform: scale(1.1);
 }
 
-header div img {
-    width: 100%;
-    border-radius: 50%;
-}
 
 main {
     max-width: 580px;
@@ -139,6 +130,7 @@ section ul{
     width: 90px;
     border-radius: 8px;
 }
+
 
 .Book-list img:hover{
     transform: scale(1.1);

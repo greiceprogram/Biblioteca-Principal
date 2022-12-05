@@ -4,45 +4,37 @@
     box-sizing: border-box;
 }
 
-#mySidenav a {
-    position: absolute; /* Position them relative to the browser window */
-    left: -80px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 100px; /* Set a specific width */
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Increase font size */
-    color: white; /* White text color */
-    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+/* Menu */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
   }
   
-  #mySidenav a:hover {
-    left: 0; /* On mouse-over, make the elements appear as they should */
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
   }
   
-  /* The about link: 20px from the top with a green background */
-  #about {
-    top: 20px;
-    background-color: #04AA6D;
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
   }
   
-  #blog {
-    top: 80px;
-    background-color: #2196F3; /* Blue */
+  /* Main content */
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
   }
-  
-  #projects {
-    top: 140px;
-    background-color: #f44336; /* Red */
-  }
-  
-  #contact {
-    top: 200px;
-    background-color: #555 /* Light Black */
-  }
-  
 
-ul{
+  ul{
     list-style: none;
 }
 
@@ -132,6 +124,7 @@ section ul{
     gap: 16px;
 
     margin-top: 24px;
+
 }
 
 .Book-list img {
@@ -204,4 +197,17 @@ main section:nth-child(3){
         transform: translateY(0);
     }
 
+}
+
+@media (max-width: 600px){
+.videos{
+    margin-top: 30px;
+    padding:1vh;
+}
+.videos iframe{ 
+    width: 100%;
+    display: block;
+    margin-left: 1rem;
+  
+} 
 }
