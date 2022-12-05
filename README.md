@@ -1,10 +1,10 @@
-# NLW Books- Trilha Explorer 
+# Biblioteca
 
-![preview](./.github/preview.png)
+![preview](./..github/.Paginainicial.JPG)
 
-Projeto construido do evento Next Level Week da Rocketseat.
 
-[Clique aqui para acessar](https://grcbiblioteca.000webhostapp.com/)
+
+[Clique aqui para acessar](https://bibliotecaprincipal.000webhostapp.com/)
 
 ## Tecnologias
 
