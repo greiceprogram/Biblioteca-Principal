@@ -8,18 +8,17 @@
 .navbar {
     overflow: hidden;
     background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed; /* Defina a barra de navegação para a posição fixa*/
+    top: 0; /* Posicione a barra de navegação no topo da página */
+    width: 100%; /* Largura completa */
   }
   
-  /* Links inside the navbar */
+  /* Links dentro da barra de navegação */
   .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px 12px;
+    color:#f2f2f2;
+    padding: 12px 16px;
     text-decoration: none;
   }
   
@@ -39,11 +38,12 @@
 }
 
 body { 
-    background-image: url(aberto.jpg);
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: whitesmoke;
+    margin: 0;
+    
 }
 
 body * {
@@ -51,11 +51,12 @@ body * {
     line-height: 160%;
 }
 
-header {
-    padding-top: 32px;
-    height: calc(120px + 32px);
-    
-}
+.header{
+    display: inline-flex;
+    padding: 1px;
+    margin-top: 15vh;
+   
+  }
 header div{
     width: 120px;
     margin: auto;
@@ -93,16 +94,20 @@ section {
     }   
 
 
-section div { /*fundo dos cards*/
-    background-image: url(aberto.jpg);
-    padding: 32px;
-    padding-top: 14px;
-    border-radius: 8px;
-}
+    section div { /*fundo dos cards*/
+        background-image: url(assets/aberto.jpg);
+        background-color: #2a2634;
+        padding: 32px;
+        padding-top: 14px;
+        border-radius: 8px;
+        
+    }
 
 section h2 {
-    letter-spacing: -0.47px;    
-    color:#121214;
+    letter-spacing: -0.47px;
+    color:#9572fC;
+    text-align: center;
+    text-decoration:underline overline; /*traço em cima e em baixo das palavras*/
 }
 
 section h6{
@@ -126,6 +131,40 @@ section ul{
     margin-top: 24px;
 
 }
+.video{  /*Card do video*/
+    display: flex;
+    width: auto;
+    margin-left: 5vh;
+
+    color: white;
+    background-image: linear-gradient(90deg,#9572fC 0%, #43E7AD 50.52%, #E2D45C 100%); 
+    padding-top: 4px;
+    border-radius: 10px;
+    
+
+    background-image: url(assets/aberto.jpg);
+    background-color: #2a2634;
+    padding: 32px;
+    padding-top: 14px;
+    border-radius: 8px;
+
+  }
+
+  iframe{ /*video*/
+    border-radius: 10px;
+    margin: auto;
+  }
+
+  .video h2{ /*texto inicial*/
+    letter-spacing: -0.47px; 
+    color:#9572fC;
+    text-align: center;
+    text-decoration:underline overline; /*traço em cima e em baixo das palavras*/
+  }
+
+  .video h4{ /*sub texto*/
+    color:black;
+  }
 
 .Book-list img {
     width: 90px;

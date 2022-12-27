@@ -17,10 +17,63 @@
   .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px 12px;
+    color:#f2f2f2;
+    padding: 12px 16px;
     text-decoration: none;
+  }
+
+  .bemVindos{ /*inicial */
+    display:flex;
+    width: 80%;
+    
+  }
+
+  .video{  /*Card do video*/
+    display: flex;
+    width: auto;
+    margin-left: 5vh;
+
+    color: white;
+    background-image: linear-gradient(90deg,#9572fC 0%, #43E7AD 50.52%, #E2D45C 100%); 
+    padding-top: 4px;
+    border-radius: 10px;
+    
+
+    background-image: url(assets/aberto.jpg);
+    background-color: #2a2634;
+    padding: 32px;
+    padding-top: 14px;
+    border-radius: 8px;
+
+  }
+
+  iframe{ /*video*/
+    border-radius: 10px;
+    margin: auto;
+  }
+
+  .video h2{ /*texto inicial*/
+    letter-spacing: -0.47px; 
+    color:#9572fC;
+    text-align: center;
+    text-decoration:underline overline; /*traço em cima e em baixo das palavras*/
+  }
+
+  .video h4{ /*sub texto*/
+    color:black;
+  }
+
+  .romanceSegundo{ /*card romance*/
+    display:flex;
+    width: auto;
+    margin:10vh;
+  }
+
+  .header{
+    display: inline-flex;
+    padding: 1px;
+    margin-top: 15vh;
+   
   }
   
   /* Muda o plano do fundo ao passar o mouse*/
@@ -39,7 +92,6 @@
 }
 
 body { 
-    background-image: url(assets/aberto.jpg);
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -57,16 +109,6 @@ body * {
 header {
     padding-top: 32px;
     height: calc(120px + 32px);
-    
-}
-header div{
-    width: 120px;
-    margin: auto;
-    background-image: linear-gradient(90deg,#9572fC 0%, #43E7AD 50.52%, #E2D45C 100%);
-    border-radius: 50%;
-
-    display: flex;
-    padding: 4px;
 }
 
 header div:hover{
@@ -74,17 +116,16 @@ header div:hover{
 }
 
 
-main {
+main { 
     max-width: 580px;
     width: 90%;
     margin: 32px auto;
-
-    display: grid;
+    display: flex;
     gap: 24px;
 
 }
 
-section { 
+section { /*bordas do fundo do card*/
      color: white;
      background-image: linear-gradient(90deg,#9572fC 0%, #43E7AD 50.52%, #E2D45C 100%); 
      padding-top: 4px;
@@ -104,6 +145,8 @@ section div { /*fundo dos cards*/
 section h2 {
     letter-spacing: -0.47px;
     color:#9572fC;
+    text-align: center;
+    text-decoration:underline overline; /*traço em cima e em baixo das palavras*/
 }
 
 section p {
@@ -115,18 +158,15 @@ section h6 {
     color:#555;
 
 }
-section iframe{
-    border-radius: 10%;
-}
+
 section ul{
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-
     margin-top: 24px;
 }
 
-.Book-list img {
+.Book-list img { /*card livro*/
     width: 90px;
     border-radius: 8px;
 }
@@ -136,22 +176,12 @@ section ul{
     transform: scale(1.1);
 }
 
-.Book-list-Bel img {
-    border-radius: 50%;
-    width: 70px;
-    
-
-}
-
-.Book-list-Bel img:hover{
-    transform: scale(1.1);
-}
 
 .social-list img:hover{
     transform: scale(1.1);
 }
 
-/* animation */
+/* animação */
 
 header div {
     animation: fromTop .7s .2s backwards;
@@ -173,6 +203,7 @@ main section:nth-child(3){
     animation-delay: .8s;
 
 }
+
 
 @keyframes fromTop{
     from{

@@ -104,11 +104,9 @@ section div { /*fundo dos cards*/
 
 section h2 {
     letter-spacing: -0.47px;
-}
-
-section p {
-    letter-spacing: -0.18px;
-    color: whitesmoke;
+    color:#9572fC;
+    text-align: center;
+    text-decoration:underline overline; /*traço em cima e em baixo das palavras*/
 }
 
 section ul{
@@ -164,6 +162,10 @@ main section:nth-child(2){
 main section:nth-child(3){
     animation-delay: .8s;
 
+}
+
+footer{
+    color: white;
 }
 
 @keyframes fromTop{
